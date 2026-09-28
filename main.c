@@ -1,21 +1,17 @@
 #include <stdio.h>
 
-int main(int argc, char*argv[]) {
-    int x, y, z, m;
-    int a, b, c;
-    x=2;
-    z=1;
-    a=3;
-    b=4;
-    c=5;
+int main() {
+    int input_second;
+    int minute;
+    int second;
 
-    y=a*x*x+b*x+c;
-    m=(x+y+z)/3;
-
-    printf("y=%d, m=%d", y, m);
+    printf("input the second: ");
+    scanf("%d", &input_second);
+    minute=input_second/60;
+    second=input_second%60;
+    printf("the time is %d minute and %d second\n", minute, second);
     return 0;
-
+    
 }
-
 
 
